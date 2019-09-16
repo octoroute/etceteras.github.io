@@ -64,7 +64,7 @@
 	
 	#edition {
 	color: rgba(80,80,80,1);
-	font-size: 2vmin;
+	font-size: 5vmin;
 	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 	text-align: center;
 	position: absolute;
@@ -75,6 +75,12 @@
 	margin: auto;
 	}
 	
+	
+	@media (min-aspect-ratio: 4/3) {
+  #edition {
+    font-size: 2vmin;
+  }
+}
 
 </style>     
 
