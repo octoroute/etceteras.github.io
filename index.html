@@ -1,8 +1,9 @@
 <!doctype html>
-<html><head>
+<html>
+<head>
 <meta charset="utf-8">
 <title>Etceteras</title>
-	
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 
@@ -25,76 +26,70 @@
 	
 <style>
 	
+	
 	body {
   	background: rgba(0,0,0,1);
-}
+	}
 	
-a {color: rgba(255,255,255,1.00); text-decoration: none;}
+	a {
+	color: rgba(255,255,255,0.85); text-decoration: none;
+	}
 
 	
 	#container {
 	font-size: 20vmin;
 	text-align: center;
-	color: rgba(255,255,255,0.85);
+	color: rgba(255,255,255,1);
 	width: 100vw;
 	height: 0vh;/* 16/9 = 1.778 */
    
-        position: absolute;
-        top:0;
+    position: absolute;
+    top:0;
 	bottom:0;
-        left:0;
+    left:0;
 	right:0;
 	margin: auto;
-	
-}	
+	}	
 	
 	#logo {
 	margin-top: 0%;
-        margin-bottom: 0%;
+    margin-bottom: 0%;
 	transform: translate(0%, -50%)
 	}
 	
 
 </style>     
 
-		 <script>
+<script>
 		   
-            var fonts = ["'Advent Pro', sans-serif;", "'Aguafina Script', cursive;", "'Akronim', cursive;", "'Alegreya', serif;", "'Amarante', cursive;", "'Amita', cursive;", "'Annie Use Your Telescope', cursive;", "'Arbutus Slab', serif;", "'Architects Daughter', cursive;", "'Archivo Black', sans-serif;", "'Aref Ruqaa', serif;", "'Arizonia', cursive;", "'Arsenal', sans-serif;", "'Arya', sans-serif;", "'Asap Condensed', sans-serif;", "'Asul', sans-serif;", "'Bad Script', cursive;", "'Basic', sans-serif;", "'BenchNine', sans-serif;", "'Bigelow Rules', cursive;", "'Black And White Picture', sans-serif;", "'Bonbon', cursive;", "'Butterfly Kids', cursive;", "'Calligraffitti', cursive;", "'Ceviche One', cursive;", "'Chau Philomene One', sans-serif;", "'Cinzel Decorative', cursive;", "'Corben', cursive;", "'Cormorant Garamond', serif;", "'Cormorant Upright', serif;", "'Courgette', cursive;", "'Crete Round', serif;", "'David Libre', serif;", "'Della Respira', serif;", "'DM Sans', sans-serif;", "'Dr Sugiyama', cursive;", "'EB Garamond', serif;", "'El Messiri', sans-serif;", "'Encode Sans', sans-serif;", "'Engagement', cursive;", "'Esteban', serif;", "'Exo', sans-serif;", "'Fahkwang', sans-serif;", "'Fauna One', serif;", "'Federo', sans-serif;", "'Felipa', cursive;", "'Fenix', serif;", "'Fjalla One', sans-serif;", "'Fresca', sans-serif;", "'Gabriela', serif;", "'Germania One', cursive;", "'GFS Didot', serif;", "'Gilda Display', serif;", "'Great Vibes', cursive;", "'Gurajada', serif;", "'Habibi', serif;", "'Halant', serif;", "'Headland One', serif;", "'Henny Penny', cursive;", "'IBM Plex Serif', serif;", "'IM Fell French Canon', serif;", "'Imprima', sans-serif;", "'Italianno', cursive;", "'Jacques Francois Shadow', cursive;", "'Jim Nightshade', cursive;", "'Judson', serif;", "'Junge', serif;", "'Kadwa', serif;", "'Katibeh', cursive;", "'Kranky', cursive;", "'Kristi', cursive;", "'Laila', serif;", "'Ledger', serif;", "'Lexend Deca', sans-serif;", "'Libre Barcode 39 Extended Text', cursive;", "'Libre Caslon Display', serif;", "'Libre Caslon Text', serif;", "'Limelight', cursive;", "'Lily Script One', cursive;", "'Linden Hill', serif;", "'Literata', serif;", "'Liu Jian Mao Cao', cursive;", "'Londrina Shadow', cursive;", "'Lora', serif;", "'Macondo Swash Caps', cursive;", "'Magra', sans-serif;", "'Marcellus', serif;", "'Markazi Text', serif;", "'Medula One', cursive;", "'Metamorphous', cursive;", "'Miltonian', cursive;", "'Mina', sans-serif;", "'Miniver', cursive;", "'Miriam Libre', sans-serif;", "'Miss Fajardose', cursive;", "'Mitr', sans-serif;", "'Modern Antiqua', cursive;", "'Monoton', cursive;", "'Monsieur La Doulaise', cursive;", "'Montaga', serif;", "'Montez', cursive;", "'Montserrat', sans-serif;", "'Mountains of Christmas', cursive;", "'Mouse Memoirs', sans-serif;", "'Mr Bedfort', cursive;", "'Oleo Script Swash Caps', cursive;", "'Philosopher', sans-serif;", "'Princess Sofia', cursive;", "'Pridi', serif;", "'Prociono', serif;", "'Raleway Dots', cursive;", "'Ramaraja', serif;", "'Rancho', cursive;", "'Rasa', serif;", "'Rationale', sans-serif;", "'Rokkitt', serif;", "'Romanesco', cursive;", "'Sahitya', serif;", "'Satisfy', cursive;", "'Sorts Mill Goudy', serif;", "'Tangerine', cursive;", "'Trykker', serif;", "'Yatra One', cursive;", 
-];
-            var randFont = fonts[Math.floor(Math.random() * fonts.length)];
-            console.log(randFont);
+var fonts = ["'Advent Pro', sans-serif;", "'Aguafina Script', cursive;", "'Akronim', cursive;", "'Alegreya', serif;", "'Amarante', cursive;", "'Amita', cursive;", "'Annie Use Your Telescope', cursive;", "'Arbutus Slab', serif;", "'Architects Daughter', cursive;", "'Archivo Black', sans-serif;", "'Aref Ruqaa', serif;", "'Arizonia', cursive;", "'Arsenal', sans-serif;", "'Arya', sans-serif;", "'Asap Condensed', sans-serif;", "'Asul', sans-serif;", "'Bad Script', cursive;", "'Basic', sans-serif;", "'BenchNine', sans-serif;", "'Bigelow Rules', cursive;", "'Black And White Picture', sans-serif;", "'Bonbon', cursive;", "'Butterfly Kids', cursive;", "'Calligraffitti', cursive;", "'Ceviche One', cursive;", "'Chau Philomene One', sans-serif;", "'Cinzel Decorative', cursive;", "'Corben', cursive;", "'Cormorant Garamond', serif;", "'Cormorant Upright', serif;", "'Courgette', cursive;", "'Crete Round', serif;", "'David Libre', serif;", "'Della Respira', serif;", "'DM Sans', sans-serif;", "'Dr Sugiyama', cursive;", "'EB Garamond', serif;", "'El Messiri', sans-serif;", "'Encode Sans', sans-serif;", "'Engagement', cursive;", "'Esteban', serif;", "'Exo', sans-serif;", "'Fahkwang', sans-serif;", "'Fauna One', serif;", "'Federo', sans-serif;", "'Felipa', cursive;", "'Fenix', serif;", "'Fjalla One', sans-serif;", "'Fresca', sans-serif;", "'Gabriela', serif;", "'Germania One', cursive;", "'GFS Didot', serif;", "'Gilda Display', serif;", "'Great Vibes', cursive;", "'Gurajada', serif;", "'Habibi', serif;", "'Halant', serif;", "'Headland One', serif;", "'Henny Penny', cursive;", "'IBM Plex Serif', serif;", "'IM Fell French Canon', serif;", "'Imprima', sans-serif;", "'Italianno', cursive;", "'Jacques Francois Shadow', cursive;", "'Jim Nightshade', cursive;", "'Judson', serif;", "'Junge', serif;", "'Kadwa', serif;", "'Katibeh', cursive;", "'Kranky', cursive;", "'Kristi', cursive;", "'Laila', serif;", "'Ledger', serif;", "'Lexend Deca', sans-serif;", "'Libre Barcode 39 Extended Text', cursive;", "'Libre Caslon Display', serif;", "'Libre Caslon Text', serif;", "'Limelight', cursive;", "'Lily Script One', cursive;", "'Linden Hill', serif;", "'Literata', serif;", "'Liu Jian Mao Cao', cursive;", "'Londrina Shadow', cursive;", "'Lora', serif;", "'Macondo Swash Caps', cursive;", "'Magra', sans-serif;", "'Marcellus', serif;", "'Markazi Text', serif;", "'Medula One', cursive;", "'Metamorphous', cursive;", "'Miltonian', cursive;", "'Mina', sans-serif;", "'Miniver', cursive;", "'Miriam Libre', sans-serif;", "'Miss Fajardose', cursive;", "'Mitr', sans-serif;", "'Modern Antiqua', cursive;", "'Monoton', cursive;", "'Monsieur La Doulaise', cursive;", "'Montaga', serif;", "'Montez', cursive;", "'Montserrat', sans-serif;", "'Mountains of Christmas', cursive;", "'Mouse Memoirs', sans-serif;", "'Mr Bedfort', cursive;", "'Oleo Script Swash Caps', cursive;", "'Philosopher', sans-serif;", "'Princess Sofia', cursive;", "'Pridi', serif;", "'Prociono', serif;", "'Raleway Dots', cursive;", "'Ramaraja', serif;", "'Rancho', cursive;", "'Rasa', serif;", "'Rationale', sans-serif;", "'Rokkitt', serif;", "'Romanesco', cursive;", "'Sahitya', serif;", "'Satisfy', cursive;", "'Sorts Mill Goudy', serif;", "'Tangerine', cursive;", "'Trykker', serif;", "'Yatra One', cursive;"];
 
-  
+var randFont = fonts[Math.floor(Math.random() * fonts.length)];
+//console.log(randFont);
 
-  let fontLength = randFont.length;
-
-  let n = randFont.indexOf(",");
-  let trimmedFont = randFont.slice(1,n-1);
-
-  let fontForLink = trimmedFont.replace(/'/g, "").replace(/ /g, "+");
-			
-  let link = document.createElement("link");
-  link.id = 'font';
-  link.href = "https://fonts.googleapis.com/css?family=" + fontForLink +"&display=block&text=%26cs.";
-  console.log(link.href);
-  link.rel = "stylesheet";
-  document.head.appendChild(link);
+var fontLength = randFont.length;
+var n = randFont.indexOf(",");
+var trimmedFont = randFont.slice(1,n-1);
+var fontForLink = trimmedFont.replace(/'/g, "").replace(/ /g, "+");
+var link = document.createElement("link");
+	link.id = 'font';
+	link.href = "https://fonts.googleapis.com/css?family=" + fontForLink +"&display=block&text=%26cs.";
+ 	// console.log(link.href);
+  	link.rel = "stylesheet";
+  	document.head.appendChild(link);
 	
-					 var style = document.createElement('style');
-  style.innerHTML = '#logo, #container, #linkText {font-family:' + randFont + '}';
-  console.log(style);
-  document.head.appendChild(style);			 
+var style = document.createElement('style');
+	style.innerHTML = '#logo, #container, #linkText {font-family:' + randFont + '}';
+  	console.log(style);
+  	document.head.appendChild(style);			 
 			 
-		link.addEventListener('load', myFunction);
-							  
-							function  myFunction() { setTimeout(function() { document.getElementById("logo").innerHTML="&cs."; }, 300);}
-			
+link.addEventListener('load', myFunction);
 	
+	function  myFunction() { setTimeout(function() { document.getElementById("logo").innerHTML="&cs."; }, 300); }
 			
-        </script>
+</script>
 	
 </head>
-
 
 
 <body>
@@ -103,4 +98,5 @@ a {color: rgba(255,255,255,1.00); text-decoration: none;}
 
       
 </body>
+
 </html>
